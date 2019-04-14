@@ -1,0 +1,119 @@
+footer {
+	color: $gray-1300;
+	font-weight:300;
+}
+
+.footer-topl-line {
+	background:$black;
+	padding:18px 0;
+	@include media("<=tablet") {
+		padding-bottom:30px;
+	}
+
+	h3 {
+		font-weight: 300;
+		margin-bottom: 22px;
+	}
+
+	a {
+		display:block;
+		color: $gray-1300;
+		font-size:14px;
+		border-bottom:1px solid #515757;
+		padding-bottom:4px;
+		margin-bottom:3px;
+		@include animate(border-bottom color)
+
+		&:hover {
+			color: $green;
+			border-bottom:1px solid $black;
+		}
+	}
+}
+
+.boxes-wrap {
+	display:flex;
+	justify-content:space-between;
+	margin-right: -10px;
+
+	@include media("<=desktop") {
+		flex-wrap:wrap;
+	}
+}
+
+.box {
+	width:100%;
+	margin-right: 30px;
+	&:last-child {
+		margin-right:0;
+	}
+
+	@include media("<=desktop") {
+		margin-right:0;
+		margin-bottom:30px;
+		flex:50%;
+	}
+
+	@include media("<=tablet") {
+		flex:100%;
+		&:last-child {
+			margin-bottom:0;
+		}
+	}
+
+	.article-list {
+		width:100%;
+		max-width:230px;
+
+		li {
+			&:last-child {
+				a {
+					border-bottom:none;
+				}
+			}
+		}
+	}
+}
+
+.footer-middle-line {
+	padding:26px 0;
+	background:$light-black;
+	text-align:center;
+}
+
+.text-logos-wrap {
+	border-bottom:1px solid #544f51;
+
+	p {
+		font-size:19px;
+		margin-bottom: 9px;
+
+		@include media("<=tablet") {
+			font-size:12px;
+		}
+	}
+}
+
+.logo-wrap {
+	display:flex;
+	justify-content:center;
+	margin-bottom:13px;
+
+	.logo {
+		margin-right:4px;
+
+		&:last-child {
+			margin-right:0;
+		}
+	}
+}
+
+.copyright {
+	display:block;
+	margin:15px 0;
+	font-size:15px;
+
+	@include media("<=tablet") {
+			font-size:12px;
+		}
+}
